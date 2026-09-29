@@ -1,0 +1,149 @@
+/* General Reset & Background Theme */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffccd5; /* Soft pastel pink background */
+    background-image: radial-gradient(#ff4d6d 15%, transparent 16%), radial-gradient(#ff4d6d 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Central Card Layout */
+.card-container {
+    background: #ffffff;
+    border: 4px dashed #ff4d6d;
+    padding: 40px 30px;
+    border-radius: 25px;
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+/* Screen Management */
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Typography & Elements */
+.cute-title {
+    font-size: 28px;
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+.heart-icon {
+    font-size: 50px;
+    margin: 20px 0;
+    animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+p {
+    color: #444;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.instruction-text {
+    font-weight: 700;
+    color: #ff4d6d;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Buttons Styling */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.yes-btn {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+    transition: transform 0.2s;
+}
+
+.yes-btn:hover {
+    transform: scale(1.08);
+}
+
+.no-btn, .back-btn {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.no-btn:hover, .back-btn:hover {
+    transform: scale(1.08);
+}
+
+/* Gift Boxes Grid */
+.gifts-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.gift-box {
+    background: #fff0f3;
+    border: 2px solid #ffb3c1;
+    padding: 15px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ff4d6d;
+    width: 85px;
+    transition: all 0.2s ease;
+}
+
+.gift-box:hover {
+    background: #ff4d6d;
+    color: white;
+    transform: translateY(-5px);
+    border-color: #ff4d6d;
+}
+
+/* Dynamic Content Box */
+#gift-content h3 {
+    color: #ff4d6d;
+    margin-top: 0;
+}
+
+#gift-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555;
+}
